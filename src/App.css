@@ -1,0 +1,86 @@
+/* Contenedor principal de la aplicación */
+.app-container {
+  min-height: 100vh;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  transition: all 0.3s ease;
+}
+
+.app-container.modo-oscuro {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.app-container.modo-claro {
+  background-color: #f4f4f9;
+  color: #000000;
+}
+
+/* Envoltorio del contenido */
+.content-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Botón de alternar Modo Oscuro / Claro */
+.theme-toggle-wrapper {
+  text-align: right;
+  max-width: 800px;
+  margin: 0 auto 10px auto;
+}
+
+.theme-toggle-btn {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.theme-toggle-btn.oscuro {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.theme-toggle-btn.claro {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+/* Sección del Carrito */
+.cart-section {
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 20px 0;
+  border: 2px solid blue;
+}
+
+.cart-section.oscuro {
+  background-color: #1e1e1e;
+}
+
+.cart-section.claro {
+  background-color: #e0e0e0;
+}
+
+.cart-text {
+  font-size: 18px;
+}
+
+.clear-cart-btn {
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  padding: 6px 80px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Rejilla de productos */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  text-align: center;
+}
